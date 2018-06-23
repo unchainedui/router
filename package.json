@@ -1,0 +1,29 @@
+{
+  "name": "uc-router",
+  "version": "1.0.0",
+  "description": "Declarative router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unchainedui/router.git"
+  },
+  "keywords": [
+    "unchained",
+    "ui",
+    "browser",
+    "router",
+    "kiss"
+  ],
+  "author": "Alexey Novikov <v@2dubs.com> (http://2dubs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unchainedui/router/issues"
+  },
+  "homepage": "https://github.com/unchainedui/router#readme",
+  "dependencies": {
+    "uc-dom": "^1.0.0"
+  }
+}
