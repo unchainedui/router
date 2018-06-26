@@ -12,7 +12,7 @@ const rxNamedParam = /(\(\?)?:\w+/g;
 const rxSplatParam = /\*\w+/g;
 const rxEscapeRegExp = /[-{}\[\]+?.,\\\^$|#\s]/g;
 
-export const Router = function(cb) {
+const Router = function(cb) {
   this.cb = cb();
   this.counter = 0;
   this.routes = {};
@@ -95,3 +95,4 @@ Router.prototype = {
   }
 };
 
+export default Router;

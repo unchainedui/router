@@ -2,6 +2,9 @@
 
 ## Router
 
+[![NPM Version](https://img.shields.io/npm/v/uc-router.svg?style=flat-square)](https://www.npmjs.com/package/uc-router)
+[![NPM Downloads](https://img.shields.io/npm/dt/uc-router.svg?style=flat-square)](https://www.npmjs.com/package/uc-router)
+
 Declarative router
 
 ### Usage

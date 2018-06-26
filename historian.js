@@ -14,7 +14,7 @@ function getLocationWithHash() {
   return loc;
 }
 
-export const Historian = function(cb) {
+const Historian = function(cb) {
   this.cb = cb;
   this.url = getLocationWithHash();
   this.prevState = {};
@@ -64,3 +64,5 @@ Historian.prototype = {
     off(window, 'popstate', this.onPopState);
   }
 };
+
+export default Historian;
