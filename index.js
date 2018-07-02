@@ -12,8 +12,8 @@ const rxNamedParam = /(\(\?)?:\w+/g;
 const rxSplatParam = /\*\w+/g;
 const rxEscapeRegExp = /[-{}\[\]+?.,\\\^$|#\s]/g;
 
-const Router = function(cb) {
-  this.cb = cb();
+const Router = function(onRoute) {
+  this.onRoute = onRoute;
   this.counter = 0;
   this.routes = {};
   this.route = [];
@@ -54,7 +54,7 @@ Router.prototype = {
         );
 
         this.route = [ r, urlOpts ];
-        this.cb(r, urlOpts);
+        this.onRoute(r, urlOpts);
         return;
       }
     }
