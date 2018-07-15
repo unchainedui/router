@@ -27,7 +27,7 @@ Router.prototype = {
       .replace(rxEscapeRegExp, '\\$&')
       .replace(rxOptionalParam, '(?:$1)?')
       .replace(rxNamedParam, (match, optional) => {
-        names.push(match.substr(1));
+        names.push(match.substr(optional ? 3 : 1));
         return optional ? match : '([^/?]+)';
       })
       .replace(rxSplatParam, '([^?]*?)');
